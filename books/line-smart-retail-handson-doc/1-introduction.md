@@ -10,11 +10,10 @@ title: "はじめに"
 
 # システム図 (簡易版)
 
-![](https://storage.googleapis.com/zenn-user-upload/jak5xkwup33jv6mxuwhswly7auko)
+（工事中）
 
 # アプリのデモ
-（本コンテンツではLINE Payはハンズオンの内容から除外しています。）
-https://youtu.be/e15n8fqvQqc
+（工事中）
 
 :::message alert
 PayPayロゴなどの素材については、公式のガイドラインなどをご参照の上、ご利用ください。

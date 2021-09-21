@@ -6,3 +6,11 @@ published: false # falseだと下書き
 price: 0 # 有料の場合200〜5000
 chapters:
   - 1-introduction # はじめに
+  - 2-create-line-messaging-api-channel
+  - 3-create-line-login-channel
+  - 4-setup-paypay-for-developers
+  - 5-setup-aws-cloud9
+#  - 6-deploy-aws-backend
+#  - 7-deploy-aws-frontend
+#  - 8-validation
+#  - 9-clean-up
