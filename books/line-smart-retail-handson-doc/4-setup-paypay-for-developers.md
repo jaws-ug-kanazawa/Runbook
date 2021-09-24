@@ -30,7 +30,7 @@ title: "PayPayサンドボックス利用設定"
 https://miniapps.paypay.ne.jp/account/signin
 ![](https://storage.googleapis.com/zenn-user-upload/rg63jvj1aj2o3x1fwon6cp8ouccr)
 
-- APIキー、シークレットキー、MERCHANT IDをメモする
+- APIキー、シークレットキー、MERCHANT ID(加盟店ID)をメモする
 ![](https://storage.googleapis.com/zenn-user-upload/00fajube3a09txh2dy4bqnk3ry7s)
 
 # PayPayサンドボックスアプリにログイン

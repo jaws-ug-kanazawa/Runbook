@@ -13,7 +13,8 @@ title: "はじめに"
 （工事中）
 
 # アプリのデモ
-（工事中）
+
+https://youtu.be/ZBKGvAQKlIY
 
 :::message alert
 PayPayロゴなどの素材については、公式のガイドラインなどをご参照の上、ご利用ください。

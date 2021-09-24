@@ -14,7 +14,7 @@ https://ap-northeast-1.console.aws.amazon.com/cloud9/home?region=ap-northeast-1
 ![](https://storage.googleapis.com/zenn-user-upload/e0uigt6pwmrszw9gh9jkrle48pnc)
 Instance typeはt3.smallを選択してください。（あとは基本的にデフォルトのままで構いません）
 ![](https://storage.googleapis.com/zenn-user-upload/q58c5pnl0ccdv3yv0kn8jdng50n3)
-VPCは特別な理由が無ければdefaultのものを選択するようにしてください。
+VPCは特別な理由が無ければdefaultのものを選択して、`Next step`ボタンを押してください。
 ![](https://storage.googleapis.com/zenn-user-upload/6cv3qvohhfu9i7zqqzn73mcg5pz5)
 :::message alert
 defaultのVPCが無い場合は下記の方法でdefaultのVPCを作成してください。
@@ -57,16 +57,14 @@ df -H
 ```
 ```
 Filesystem      Size  Used Avail Use% Mounted on
-devtmpfs        497M     0  497M   0% /dev
-tmpfs           516M     0  516M   0% /dev/shm
-tmpfs           516M  566k  515M   1% /run
-tmpfs           516M     0  516M   0% /sys/fs/cgroup
-/dev/xvda1       22G   12G   11G  52% /
-tmpfs           104M     0  104M   0% /run/user/1000
-tmpfs           104M     0  104M   0% /run/user/0
+devtmpfs        1.1G     0  1.1G   0% /dev
+tmpfs           1.1G     0  1.1G   0% /dev/shm
+tmpfs           1.1G  463k  1.1G   1% /run
+tmpfs           1.1G     0  1.1G   0% /sys/fs/cgroup
+/dev/nvme0n1p1   22G  8.9G   13G  42% /
+tmpfs           205M     0  205M   0% /run/user/1000
 ```
 
 ----
 参考）
-- https://github.com/jaws-ug-kanazawa/line-api-use-case-table-order/blob/cloud9/docs/cloud9.md
 - https://docs.aws.amazon.com/cloud9/latest/user-guide/move-environment.html
