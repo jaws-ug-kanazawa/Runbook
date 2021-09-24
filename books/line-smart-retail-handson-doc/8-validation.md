@@ -60,6 +60,7 @@ https://github.com/tacck/line-api-use-case-smart-retail/blob/main/backend/APP/dy
 
 # 動作確認しましょう！
 
-全ての準備は整いました！アプリを起動し動作確認してみてください！
+全ての準備は整いました！
+LIFEのURLをLINEアプリで起動して、動作確認してみてください！
 
 https://youtu.be/ZBKGvAQKlIY
