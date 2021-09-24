@@ -29,7 +29,7 @@ line-api-use-case-smart-retail/
 - template.yaml の修正
 :::details 参考）修正が必要になった場合
 下記ファイル内のパラメータを修正します。
-https://github.com/tacck/line-api-use-case-smart-retail/blob/main/backend/Layer/template.yaml#L25
+![](https://storage.googleapis.com/zenn-user-upload/9fab646cd01919a4d55a48e9.png)
 
 ```
       LayerName: 任意のレイヤー名
@@ -73,7 +73,7 @@ sam deploy --guided
 - template.yaml の修正
 :::details 参考）修正が必要になった場合
 下記ファイル内のパラメータを修正します。
-https://github.com/tacck/line-api-use-case-smart-retail/blob/main/backend/batch/template.yaml#L23
+![](https://storage.googleapis.com/zenn-user-upload/5978d27c15557c8d1365c328.png)
 
 ```
     dev:
@@ -118,14 +118,12 @@ sam deploy --guided
   - DynamoDBのコンソール画面にアクセス
 下記のURLからDynamoDBのコンソール画面を開き、先ほど作成したテーブルを開き、`項目の作成`ボタンを押します。
 https://ap-northeast-1.console.aws.amazon.com/dynamodbv2/home?region=ap-northeast-1#item-explorer?initialTagKey=&maximize=true&table=LINEChannelAccessTokenTBL
-画面を差し替える
-![](https://storage.googleapis.com/zenn-user-upload/kw2k8nmxpd5gceb493ww8x7hgb1g)
+![](https://storage.googleapis.com/zenn-user-upload/8830331679787eb0211da779.png)
   - 項目の作成画面でデータを登録
   項目の作成画面でMessaging APIのチャネル(※LINE Loginのチャネルではありません)の`チャネルID`と`チャネルシークレットキー`を登録します。（`チャネルID`と`チャネルシークレットキー`は[LINE Developers コンソール](https://developers.line.biz/console/)のチャネル基本設定にて確認できます。）
     - channelId: チャネル ID (文字列)
     - channelSecret: チャネルシークレット(文字列)
-画面を差し替える
-![](https://storage.googleapis.com/zenn-user-upload/ue8y75t0geax37ta0k5rjg1flx8n)
+![](https://storage.googleapis.com/zenn-user-upload/24637064fecc9704decbe640.png)
       
 - チャネルアクセストークン更新の Lambda 関数を実行する
   - AWS マネジメントコンソールにログインし、Lambda のコンソールを開く

@@ -33,8 +33,7 @@ Cloud9のターミナル領域で下記のgit cloneコマンドを実行しハ�
 cd ~/environment
 git clone https://github.com/tacck/line-api-use-case-smart-retail.git
 ```
-cloneするURLを差し替えする
-![](https://storage.googleapis.com/zenn-user-upload/5x8utgnv078ebjces9yg42w9xtbt)
+![](https://storage.googleapis.com/zenn-user-upload/cfa5e1c9e75df155bde412d8.png)
 
 # ディスク容量の拡張
 
