@@ -133,13 +133,12 @@ https://ap-northeast-1.console.aws.amazon.com/lambda/home?region=ap-northeast-1#
     - テンプレート: `hello-world`を選択
     - 名前: test
     - 一番下のテキストボックス : `{}`
-![](https://storage.googleapis.com/zenn-user-upload/2uf5toitic64ldxs54rq6j7gqdlc)
+![](https://storage.googleapis.com/zenn-user-upload/7fd9aafada73df4520895d3d.png)
 
 - 【確認】DynamoDBのテーブルに必要な情報が入ったかを確認
 下記のURLからDynamoDBのコンソール画面を開き、`channelAccessToken`,`limitDate`の項目が追加されていることを確認します。
 https://ap-northeast-1.console.aws.amazon.com/dynamodbv2/home?region=ap-northeast-1#item-explorer?initialTagKey=&table=LINEChannelAccessTokenTBL
-画面を差し替える
-![](https://storage.googleapis.com/zenn-user-upload/2oeg8n311z7u0pea6ijt4czenkm2)
+![](https://storage.googleapis.com/zenn-user-upload/f7d894a603843abb11fefe20.png)
 
 ## APPフォルダのリソースをデプロイ
 
@@ -147,20 +146,21 @@ https://ap-northeast-1.console.aws.amazon.com/dynamodbv2/home?region=ap-northeas
 
 - template.yaml の修正  
 下記ファイル内のパラメータを修正します。
-https://github.com/tacck/line-api-use-case-smart-retail/blob/main/backend/APP/template.yaml#L23
+![](https://storage.googleapis.com/zenn-user-upload/f726c8eed24044a5b1fdbc76.png)
+
     - LineOAChannelId: Messaging API チャネルのチャネル IDを入力
     - LIFFChannelId: LINEログイン チャネルのチャネル IDを入力
     - LiffUrl: LIFF URLを入力(https://liff.line.me/xxxxxxxxx-xxxxxxxxx)
     - PayPayApiKey: PayPayサンドボックス利用設定でメモしたAPIキーを入力
     - PayPayApiSecret: PayPayサンドボックス利用設定でメモしたシークレットキーを入力
     - PayPayApiMerchantId: PayPayサンドボックス利用設定でメモしたMERCHANT ID(加盟店ID)を入力
-    - PayPayIsProd: Falseを指定
-    - RegisterOrderInfoDBName: RegisterOrderInfoTBL
-    - RegisterItemInfoDBName: RegisterItemInfoTBL
-    - RegisterCouponInfoDBName: RegisterCouponInfoTBL
-    - LINEChannelAccessTokenDBName: LINEChannelAccessTokenTBL
-    - ConfirmUrlPass: /completed.html
-    - DetailsPass: /history.html
+    - PayPayIsProd: Falseを指定してください。
+    - RegisterOrderInfoDBName: RegisterOrderInfoTBL（注文情報を登録するテーブル）
+    - RegisterItemInfoDBName: RegisterItemInfoTBL（商品情報を登録するテーブル）
+    - RegisterCouponInfoDBName: RegisterCouponInfoTBL（クーポン情報を登録するテーブル）
+    - LINEChannelAccessTokenDBName: LINEChannelAccessTokenTBL（デプロイした「短期チャネルアクセストークンを管理するテーブル」のテーブル名）
+    - ConfirmUrlPass: /completed.html（LINEPay決済完了後に遷移するパス）
+    - DetailsPass: /history.html（注文履歴画面のパス）
     - PaymentImageUrl: https://media.istockphoto.com/vectors/cash-register-with-a-paper-check-flat-isolated-vector-id1018485968
     - LayerVersion: 1 (Layerのバージョンを指定。今回は基本的に1でOK)
 ```

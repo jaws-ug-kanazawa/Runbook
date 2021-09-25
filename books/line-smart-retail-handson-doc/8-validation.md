@@ -8,7 +8,7 @@ LINEログインのチャネル設定画面でLIFFのエンドポイントURLに
 
 ![](https://storage.googleapis.com/zenn-user-upload/4xntpxietdrhyrsm4boio81g7zyq)
 
-![](https://storage.googleapis.com/zenn-user-upload/lrh9ijjsrso23ze5wekt41rjltce)
+![](https://storage.googleapis.com/zenn-user-upload/82fc51c37438a41023d86027.png)
 
 # LIFF公開する
 
