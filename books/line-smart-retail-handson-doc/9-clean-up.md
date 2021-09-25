@@ -20,6 +20,14 @@ AWSの課金発生を止めるため、ハンズオンで作成したAWSのリ�
 deleteと入力して`Delete`ボタンを押してください。
 ![](https://storage.googleapis.com/zenn-user-upload/a3832d5a36f65c43e508e2cf.png)
 
+# CodeCommitの削除
+下記のURLからCodeCommitのコンソール画面を開き、ハンズオンで作ったものを選択してください。
+[https://ap-northeast-1.console.aws.amazon.com/codesuite/codecommit/repositories?region=ap-northeast-1]
+![](https://storage.googleapis.com/zenn-user-upload/013880778ccfb95373f1aa21.png)
+
+deleteと入力して`削除`ボタンを押してください。
+![](https://storage.googleapis.com/zenn-user-upload/77d41055252e31a1a595f3a4.png)
+
 # Cloud9削除
 ハンズオンで作ったCloud9の環境を削除してください。
 ![](https://storage.googleapis.com/zenn-user-upload/f6wgjh7jaeptqwq2hna2kxpyg0lr)
