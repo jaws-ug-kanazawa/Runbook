@@ -2,7 +2,7 @@ title: "スマートリテールのデモアプリケーションハンズオン
 summary: "2021/10/2開催 LINE Developers Community REV UP 2021で実施するハンズオンの手順書になります。
 https://github.com/line/line-api-use-case-smart-retail をもとに作成しています"
 topics: ["LINE", "PayPay", "AWS", "linedc", "Amplify"] # トピック（5つまで）
-published: false # falseだと下書き
+published: true # falseだと下書き
 price: 0 # 有料の場合200〜5000
 chapters:
   - 1-introduction # はじめに
