@@ -6,14 +6,14 @@ title: "動作確認"
 
 LINEログインのチャネル設定画面でLIFFのエンドポイントURLに、バックエンドの構築手順でメモしたドメインURLの値を設定して「更新」ボタンを押してください。
 
-![](https://storage.googleapis.com/zenn-user-upload/4xntpxietdrhyrsm4boio81g7zyq)
+![](https://storage.googleapis.com/zenn-user-upload/1ead927c9020a339648dd322.png)
 
 ![](https://storage.googleapis.com/zenn-user-upload/82fc51c37438a41023d86027.png)
 
 # LIFF公開する
 
 「非公開」ボタンを押します。
-![](https://storage.googleapis.com/zenn-user-upload/mhgpfl6m6a6bd2gliq0pwfgio8kc =500x)
+![](https://storage.googleapis.com/zenn-user-upload/fd9ad5b36e64fef8e7f618b9.png =500x)
 
 「公開」ボタンを押します。
 ![](https://storage.googleapis.com/zenn-user-upload/4ith4uysdvcsmv24zq13gb0i523a =500x)
@@ -27,7 +27,7 @@ Messaging API のチャネル基本設定画面でLINE Official Account Manager�
 
 - 表示設定
 下記のように設定しましょう。
-![](https://storage.googleapis.com/zenn-user-upload/oc4iy453c1ntkcn83qc6x0wfvehk)
+![](https://storage.googleapis.com/zenn-user-upload/0505ede6d46b2b4a69885db2.png)
 
 - テンプレート
 次に、「テンプレートを選択」を押します。小の一番下を選択して、「選択」ボタンを押しましょう。
@@ -38,14 +38,14 @@ Messaging API のチャネル基本設定画面でLINE Official Account Manager�
 ![](https://storage.googleapis.com/zenn-user-upload/e656pkyqwvg9z3pg5mcu3ynecp8d)
 
 「テキストを追加」を押して「スマートリテール」と入力します。中央揃えをして整えましょう。
-![](https://storage.googleapis.com/zenn-user-upload/iqu6vsafms5jhakycd5p6f4ka5fq =500x)
+![](https://storage.googleapis.com/zenn-user-upload/8f51423752927af38d554013.png)
 
 できたら「適用」ボタンを2回押しましょう。（「ファイルに保存」ボタンを押すと画像としてダウンロードできます。）
-![](https://storage.googleapis.com/zenn-user-upload/qc9gp5lzbnyyaq0ydwqhc3wcjejb =500x)
+![](https://storage.googleapis.com/zenn-user-upload/2c5bd0132541bd20c7278be6.png =500x)
 
 - アクション設定
 次にアクションを設定します。タイプを「リンク」にして、3. LINE ログインチャネルの作成でメモした「LIFF URL」を入力し、保存しましょう。
-![](https://storage.googleapis.com/zenn-user-upload/a69an2l4o2tae3qauwigsbw3bjg6)
+![](https://storage.googleapis.com/zenn-user-upload/a94289f10b338de948080fbf.png)
 
 
 # クーポンデータの登録
