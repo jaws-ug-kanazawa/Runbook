@@ -1,5 +1,5 @@
 title: "スマートリテールのデモアプリケーションハンズオン手順書"
-summary: "2021/10/2開催 [LINE Developers Community REV UP 2021](https://revup.jp/sessions/63lozxplh0j/) で実施するハンズオンの手順書になります。
+summary: "2021/10/2開催 LINE Developers Community REV UP 2021 https://revup.jp/sessions/63lozxplh0j/ で実施するハンズオンの手順書になります。
 https://github.com/line/line-api-use-case-smart-retail をもとに作成しています"
 topics: ["LINE", "PayPay", "AWS", "linedc", "Amplify"] # トピック（5つまで）
 published: true # falseだと下書き
