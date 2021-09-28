@@ -213,7 +213,7 @@ sam deploy --guided
 ```
 
 - API Gateway endpoint URLとCloudFrontDomainNameのメモ  
-デプロイ成功時にOutPutにて表示されるAPI Gateway endpoint URLとCloudFrontDomainNameのメモを取ってください。
+デプロイ成功時にOutPutにて表示されるAPI Gateway endpoint URL(API Gateway endpoint URL for xxx の３つのURLはいずれも https://vxxxxxl.execute-api.ap-northeast-1.amazonaws.com/ となっていますのでどれを利用しても構いません)のメモを取ってください。
 
 
 ```

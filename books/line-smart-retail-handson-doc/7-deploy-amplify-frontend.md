@@ -26,8 +26,9 @@ git remote set-url origin https://git-codecommit.ap-northeast-1.amazonaws.com/v1
 git remote -v
 git push origin main
 ```
-    以下のようになっていることを確認します。
-    ![](https://storage.googleapis.com/zenn-user-upload/6e9a1e676666ee60c4c66f3d.png)
+
+  以下のようになっていることを確認します。
+  ![](https://storage.googleapis.com/zenn-user-upload/6e9a1e676666ee60c4c66f3d.png)
 
 - Amplifyマネージメントコンソールにアクセス
 　https://ap-northeast-1.console.aws.amazon.com/amplify/home?region=ap-northeast-1#/create
