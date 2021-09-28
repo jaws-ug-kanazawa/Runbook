@@ -201,7 +201,7 @@ sam deploy --guided
     Confirm changes before deploy [Y/n]: Y
     #SAM needs permission to be able to create roles to connect to the resources in your template
     Allow SAM CLI IAM role creation[Y/n]: Y
-    ××××× may not have authorization defined, Is this okay? [y/N]: y (約10個全てyと入力)  
+    ××××× may not have authorization defined, Is this okay? [y/N]: y (6個全てyと入力)  
     Save arguments to configuration file [Y/n]: Y
 
     SAM configuration file [samconfig.toml]: 入力せずEnter 

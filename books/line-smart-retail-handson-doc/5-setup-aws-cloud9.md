@@ -47,7 +47,7 @@ chmod +x resize.sh
 ./resize.sh 20
 ```
 
-df -Hのコマンドを実行し、/dev/xvda1が20GiB(22GB)になっていることを確認してください。
+df -Hのコマンドを実行し、/dev/nvme0n1p1が20GiB(22GB)になっていることを確認してください。
 :::message
 下記のコマンドをコピペして実行しましょう！
 :::
