@@ -10,7 +10,7 @@ title: "はじめに"
 
 # システム図 (簡易版)
 
-（工事中）
+![](https://storage.googleapis.com/zenn-user-upload/6aec9da2cdd5877e5b59db2c.png)
 
 # アプリのデモ
 
