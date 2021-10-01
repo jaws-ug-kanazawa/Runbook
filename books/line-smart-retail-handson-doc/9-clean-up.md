@@ -7,7 +7,7 @@ AWSの課金発生を止めるため、ハンズオンで作成したAWSのリ�
 
 # S3バケットの削除
 下記のURLからS3のコンソール画面を開き、aws-sam-cli-managed-default-samclisourcebucket から始まるバケットを選択し、`空にする`ボタンを押してください。
-[https://console.aws.amazon.com/s3/home?region=ap-northeast-1&region=ap-northeast-1](https://console.aws.amazon.com/s3/home?region=ap-northeast-1&region=ap-northeast-1)
+[https://console.aws.amazon.com/s3/home?region=ap-northeast-1](https://console.aws.amazon.com/s3/home?region=ap-northeast-1)
 
 # CloudFormation削除
 下記のURLからCloudFormationのコンソール画面を開き、ハンズオンで作った３つのスタックを削除してください。
