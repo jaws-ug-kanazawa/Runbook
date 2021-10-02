@@ -57,7 +57,7 @@ https://ap-northeast-1.console.aws.amazon.com/dynamodbv2/home?region=ap-northeas
 - 項目の作成画面でデータを登録
 項目の作成画面の左上のDynamoDB JSONの表示がオフになっていて、右上のボタンが`JSON`になっていることを確認の上、下記のURLにあるjsonのデータをコピー＆ペーストしてください。
 https://github.com/tacck/line-api-use-case-smart-retail/blob/main/backend/APP/dynamodb_data/SmaRegiCouponInfo/smart_register_coupon_1.json
-![](https://storage.googleapis.com/zenn-user-upload/155c28baaca0fab831334ade.png)
+![](https://storage.googleapis.com/zenn-user-upload/5923bde8e7c6b434909caa63.png)
 
 - データ登録の確認
 データが正常に登録されたか、データレコードができていることを確認してください。
@@ -75,7 +75,7 @@ https://github.com/tacck/line-api-use-case-smart-retail/blob/main/backend/APP/dy
 https://github.com/tacck/line-api-use-case-smart-retail/blob/main/backend/APP/dynamodb_data/SmaRegiItemInfo/smart_register_item_3.json
 https://github.com/tacck/line-api-use-case-smart-retail/blob/main/backend/APP/dynamodb_data/SmaRegiItemInfo/smart_register_item_4.json
 https://github.com/tacck/line-api-use-case-smart-retail/blob/main/backend/APP/dynamodb_data/SmaRegiItemInfo/smart_register_item_5.json
-![](https://storage.googleapis.com/zenn-user-upload/5923bde8e7c6b434909caa63.png)
+![](https://storage.googleapis.com/zenn-user-upload/155c28baaca0fab831334ade.png)
 
 - データ登録の確認
 データが正常に登録されたか、データレコードができていることを確認してください。
