@@ -48,7 +48,7 @@ Messaging APIになっているか確認します。
 下記２点の利用規約にチェックをして「作成」ボタンを押しましょう。
 ![](https://storage.googleapis.com/zenn-user-upload/lhz3bpwtb5995j1u4mlt99t5a43k)
 「OK」を押しましょう。
-![](https://storage.googleapis.com/zenn-user-upload/f2hi57quav5nokkasjk23anlemjf =500x)
+![](https://storage.googleapis.com/zenn-user-upload/005d6c09331a54c5050657ed.png =500x)
 「同意する」を押しましょう。
 ![](https://storage.googleapis.com/zenn-user-upload/38b40kfsidf073w30w2m494pnemh =500x)
 
@@ -56,4 +56,4 @@ Messaging APIになっているか確認します。
 # LINE BOTと友だちになる
 - QRコードで友だち追加
 LINE Developersに戻り「Messaging API設定」タブに移動し、QRコードを読み取って、友だち追加をしましょう。
-![](https://storage.googleapis.com/zenn-user-upload/zixpwvkcvi2xrjj5w0xvt4kl30z5)
+![](https://storage.googleapis.com/zenn-user-upload/5ba66c5d780b8b5ce5f416d6.png)
