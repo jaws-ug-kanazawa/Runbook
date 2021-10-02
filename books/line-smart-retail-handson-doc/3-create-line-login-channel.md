@@ -43,7 +43,7 @@ Messaging API チャネルで使用したプロバイダーを選択しましょ
 
 - リンクされたボット（ページの下の方にあります）
 さきほど作成したMessagingAPIのチャネルを選択し、更新を行います。
-![](https://storage.googleapis.com/zenn-user-upload/kqpp92ez0ipj52f8kllb2dtk0yc4)
+![](https://storage.googleapis.com/zenn-user-upload/408a53fbc738b75b62fbe287.png)
 ![](https://storage.googleapis.com/zenn-user-upload/41c96c33b780321a0cf262f8.png)
 
 # LIFFの作成
