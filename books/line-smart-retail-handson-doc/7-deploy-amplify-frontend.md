@@ -43,7 +43,7 @@ git push origin main
     ![](https://storage.googleapis.com/zenn-user-upload/38ca5898e8b523c8459e59dd.png)
     
     Advanced settingsをクリックして、以下の環境変数を設定し、`次へ`ボタンを押します。
-    ![](https://storage.googleapis.com/zenn-user-upload/feb029f2f3ad12787a9bb2eb.png))
+    ![](https://storage.googleapis.com/zenn-user-upload/feb029f2f3ad12787a9bb2eb.png)
     
     - LIFF_ID: LIFF アプリの LIFF IDを入力
     - BASE_URL: AWS APIGatewayのURLを入力
