@@ -4,7 +4,7 @@ title: "環境作成の事前準備"
 
 # ハンズオンに必要な環境の作成
 - CloudFormationテンプレートのダウンロード
-https://pages.awscloud.com/rs/112-TZM-766/images/h4b_ec2autoscaling_template.zip
+[https://pages.awscloud.com/rs/112-TZM-766/images/h4b_ec2autoscaling_template.zip](https://pages.awscloud.com/rs/112-TZM-766/images/h4b_ec2autoscaling_template.zip)
 よりダウンロードしたzipファイルを解凍します。
 
 マネージメントコンソールにアクセス

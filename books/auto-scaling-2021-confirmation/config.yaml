@@ -7,4 +7,5 @@ price: 0 # 有料の場合200〜5000
 chapters:
   - 1-introduction
   - 2-create-environment
+  - 3-launch-template
   - 9-clean-up
