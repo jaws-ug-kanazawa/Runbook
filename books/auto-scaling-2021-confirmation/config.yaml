@@ -7,5 +7,8 @@ price: 0 # 有料の場合200〜5000
 chapters:
   - 1-introduction
   - 2-create-environment
-  - 3-launch-template
+  - 3-launch-templateit
+  - 4-scaleout
+  - 5-scalein
+  - 6-instancereplacement
   - 9-clean-up

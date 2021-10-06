@@ -8,7 +8,7 @@ title: "環境作成の事前準備"
 よりダウンロードしたzipファイルを解凍します。
 
 マネージメントコンソールにアクセス
-https://ap-northeast-1.console.aws.amazon.com/cloudformation/home?region=ap-northeast-1#/stacks/create/template
+[https://ap-northeast-1.console.aws.amazon.com/cloudformation/home?region=ap-northeast-1#/stacks/create/template](https://ap-northeast-1.console.aws.amazon.com/cloudformation/home?region=ap-northeast-1#/stacks/create/template)
 
 （ここにハードコピー入る）
 

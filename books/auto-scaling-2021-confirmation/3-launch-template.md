@@ -4,12 +4,12 @@ title: "スケジュールスケーリング（１）~起動テンプレート�
 
 # ユーザデータのダウンロード
 
-https://pages.awscloud.com/rs/112-TZM-766/images/h4b-ec2autoscaling-userdata.zip
+[https://pages.awscloud.com/rs/112-TZM-766/images/h4b-ec2autoscaling-userdata.zip](https://pages.awscloud.com/rs/112-TZM-766/images/h4b-ec2autoscaling-userdata.zip)
 よりダウンロードしたzipファイルを解凍します。
 
 # 起動テンプレートの作成
 
-https://ap-northeast-1.console.aws.amazon.com/ec2/v2/home?region=ap-northeast-1#LaunchTemplates:
+[https://ap-northeast-1.console.aws.amazon.com/ec2/v2/home?region=ap-northeast-1#LaunchTemplates:](https://ap-northeast-1.console.aws.amazon.com/ec2/v2/home?region=ap-northeast-1#LaunchTemplates:)
 よりEC2起動テンプレートのコンソール画面を開き、`起動テンプレートを作成`をクリックします。
 
 以下の内容を設定します。
@@ -29,7 +29,7 @@ CloudWatchモニタリングの詳細　有効化
 
 # オートスケーリンググループの作成
 
-https://ap-northeast-1.console.aws.amazon.com/ec2autoscaling/home?region=ap-northeast-1#/
+[https://ap-northeast-1.console.aws.amazon.com/ec2autoscaling/home?region=ap-northeast-1#/](https://ap-northeast-1.console.aws.amazon.com/ec2autoscaling/home?region=ap-northeast-1#/)
 よりAuto Scaling グループのコンソール画面を開き、`Auto Scaling グループの作成`をクリックします。
 
 起動テンプレートまたは起動設定を選択する のステップで以下を入力し、`次へ`をクリックします。
@@ -58,3 +58,14 @@ VPC　`h4b-vpc`　を選択
 確認のステップで内容を確認した上で、`Auto Scaling グループを作成`をクリックします。
 
 一覧に作成したAuto Scaling グループが表示されていることを確認します。
+
+# 自動スケーリングの設定
+
+作成されたAuto Scaling グループを選択し、自動スケーリングを選択し、`Create dynamic scaling policy` をクリックします。
+ターゲット値を 80 に変更し、`作成` をクリックします。
+
+# CloudWathアラームの確認
+
+自動スケーリングの設定によってアラームが設定されていることを確認します。
+[https://ap-northeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-northeast-1#alarmsV2:?~()](https://ap-northeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-northeast-1#alarmsV2:?~())
+よりCloudWatchコンソール画面を開き、`TargetTracking-autoscaling-handson20211013`から始まるアラームが２つ（スケールアウト用、スケールイン用）できていることを確認します。
