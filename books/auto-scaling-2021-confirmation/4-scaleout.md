@@ -33,9 +33,9 @@ CPU使用率が80%を超えていることを確認します。
 
 3分間経過するとアラーム状態となり、スケールアウトが開始されます。
 
-# スケールアウトしていることの確認
-
 ![](https://storage.googleapis.com/zenn-user-upload/abed566298a8d52cd923a337.png)
+
+# スケールアウトしていることの確認
 
 [https://ap-northeast-1.console.aws.amazon.com/ec2/v2/home?region=ap-northeast-1#Instances:instanceState=running;search=autoscaling-handson20211013](https://ap-northeast-1.console.aws.amazon.com/ec2/v2/home?region=ap-northeast-1#Instances:instanceState=running;search=autoscaling-handson20211013)
 にてインスタンスが1台から2台に増えていることを確認します。
