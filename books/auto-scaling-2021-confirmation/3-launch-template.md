@@ -16,7 +16,7 @@ title: "スケジュールスケーリング（１）~起動テンプレート�
 
 以下の内容を設定します。
 起動テンプレート名　`autoscaling-handson20211013`　を入力
-Amazon マシンイメージ（AMI）　`Amazon Linux 2 AMI (HVM), SSD Volume Type` を選択
+Amazon マシンイメージ（AMI）　`Amazon Linux 2 AMI (HVM), SSD Volume Type(64ビット(x86))`
 インスタンスタイプ　t2.micro を選択
 セキュリティグループ　h4b-ec2-sg
 

@@ -20,7 +20,7 @@ EC2 Instance Connectのタブにて`接続`をクリックします。
 
 コンソール画面が表示されるので、先程ダウンロードしたコマンドを入力し、画面のようになることを確認します。
 
-![](https://storage.googleapis.com/zenn-user-upload/f67e57e651f627f0f0301f6f.png)
+![](https://storage.googleapis.com/zenn-user-upload/9fef00838ea69a21947dc838.png)
 
 # CloudWatchアラーム
 
