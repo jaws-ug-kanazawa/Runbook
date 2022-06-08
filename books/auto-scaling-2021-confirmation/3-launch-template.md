@@ -16,7 +16,7 @@ title: "スケジュールスケーリング（１）~起動テンプレート�
 
 以下の内容を設定します。
 起動テンプレート名　`autoscaling-handson20211013`　を入力
-Amazon マシンイメージ（AMI）　`Amazon Linux 2 AMI (HVM), SSD Volume Type` を選択
+Amazon マシンイメージ（AMI）　`Amazon Linux 2 AMI (HVM), SSD Volume Type(64ビット(x86))`
 インスタンスタイプ　t2.micro を選択
 セキュリティグループ　h4b-ec2-sg
 
@@ -37,6 +37,8 @@ CloudWatchモニタリングの詳細　有効化
 
 [https://ap-northeast-1.console.aws.amazon.com/ec2autoscaling/home?region=ap-northeast-1#/](https://ap-northeast-1.console.aws.amazon.com/ec2autoscaling/home?region=ap-northeast-1#/)
 よりAuto Scaling グループのコンソール画面を開き、`Auto Scaling グループの作成`をクリックします。
+
+![](https://storage.googleapis.com/zenn-user-upload/24926e9fca1e8cff8d266fdd.png)
 
 起動テンプレートまたは起動設定を選択する のステップで以下を入力し、`次へ`をクリックします。
 
@@ -80,6 +82,9 @@ VPC　`h4b-vpc`　を選択
 # 自動スケーリングの設定
 
 作成されたAuto Scaling グループを選択し、自動スケーリングを選択し、`Create dynamic scaling policy` をクリックします。
+
+![](https://storage.googleapis.com/zenn-user-upload/2c05c8be8a53097a570c1e31.png)
+
 ターゲット値を 80 に変更し、`作成` をクリックします。
 
 ![](https://storage.googleapis.com/zenn-user-upload/43db06f77c84a94fd4dd6f1b.png)
