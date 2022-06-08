@@ -1,0 +1,14 @@
+title: "AWS IoT ハンズオン手順書"
+summary: "2022/6/19開催 JAWS-UG千葉支部×金沢支部×初心者支部 コラボイベント で実施するハンズオンの手順書になります。
+https://pages.awscloud.com/JAPAN-event-OE-Hands-on-for-Beginners-Auto_Scaling-2021-reg-event.html?trk=aws_introduction_page で紹介されております資料をもとに作成しています"
+topics: ["AWS", "IoT"] # トピック（5つまで）
+published: false # falseだと下書き
+price: 0 # 有料の場合200〜5000
+chapters:
+  - 1-introduction
+  - 2-create-dummy-client
+  - 3-setup-iot-client
+  - 4-scaleout
+  - 5-scalein
+  - 6-instancereplacement
+  - 9-clean-up
