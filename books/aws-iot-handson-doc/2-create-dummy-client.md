@@ -5,15 +5,15 @@ title: "IoTダミークライアント(Cloud9)の作成"
 AWS IoT Coreと通信（MQTT及びHTTP）を行うIoTクライアントを構築します。このハンズオンでは、デバイスを用いず、AWS Cloud9にAWS IoT SDKをインストールします。
 
 # Cloud9環境の作成
-- AWS Cloud9のコンソール画面にアクセスします。（ブラウザの別タブで開くことをお勧めします）
-下記のURLからCloud9のコンソール画面を開き、
+AWS Cloud9のコンソール画面にアクセスします。（ブラウザの別タブで開くことをお勧めします）
+下記のURLからCloud9のコンソール画面を開きます。
 https://ap-northeast-1.console.aws.amazon.com/cloud9/home?region=ap-northeast-1
 ![](https://storage.googleapis.com/zenn-user-upload/izcu5i5dd1s10ibjr99q1b7tb79q)
 
 [Name] 欄に任意の名前を入力して、`Next step`を押します。
 ![](https://storage.googleapis.com/zenn-user-upload/df2884990d47-20220611.png)
 
-Instance typeはt2.micro、OSはAmazon LinuxでなくUbuntu Server 18.04 LTSを選択してください。（あとは基本的にデフォルトのままで構いません）
+OSはAmazon LinuxでなくUbuntu Server 18.04 LTSを選択してください。（あとは基本的にデフォルトのままで構いません）
 `Network settings (advanced)` を展開します。
 ![](https://storage.googleapis.com/zenn-user-upload/3de1f3d09666-20220611.png)
 

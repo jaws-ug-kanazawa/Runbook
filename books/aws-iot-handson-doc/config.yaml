@@ -1,5 +1,5 @@
 title: "AWS IoT ハンズオン手順書"
-summary: "2022/6/19開催 JAWS-UG千葉支部×金沢支部×初心者支部 コラボイベント で実施するハンズオンの手順書になります。
+summary: "[2022/6/19開催 JAWS-UG千葉支部×金沢支部×初心者支部 コラボイベント](https://jawsug-kanazawa.doorkeeper.jp/events/137239) で実施するハンズオンの手順書になります。
 https://github.com/harunobukameda/AWS-IoT-Core で紹介されております資料をもとに作成しています"
 topics: ["AWS", "IoT"] # トピック（5つまで）
 published: false # falseだと下書き
@@ -8,7 +8,4 @@ chapters:
   - 1-introduction
   - 2-create-dummy-client
   - 3-setup-iot-client
-  - 4-scaleout
-  - 5-scalein
-  - 6-instancereplacement
   - 9-clean-up
