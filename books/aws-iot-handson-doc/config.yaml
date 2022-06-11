@@ -1,5 +1,5 @@
 title: "AWS IoT ハンズオン手順書"
-summary: "[2022/6/19開催 JAWS-UG千葉支部×金沢支部×初心者支部 コラボイベント](https://jawsug-kanazawa.doorkeeper.jp/events/137239) で実施するハンズオンの手順書になります。
+summary: "2022/6/19開催 JAWS-UG千葉支部×金沢支部×初心者支部 コラボイベント https://jawsug-kanazawa.doorkeeper.jp/events/137239 で実施するハンズオンの手順書になります。
 https://github.com/harunobukameda/AWS-IoT-Core で紹介されております資料をもとに作成しています"
 topics: ["AWS", "IoT"] # トピック（5つまで）
 published: false # falseだと下書き
