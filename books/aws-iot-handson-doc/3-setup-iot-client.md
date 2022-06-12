@@ -103,10 +103,10 @@ tar -zxvf dummyclient.tar.gz
 
 - `**-private.pem.key` のファイル名を private.pemに変更します。Cloud9のシェルで変更してもいいですし、エクスプローラーでrenameを選んでもいいです。
 
-- ディレクトリをシェル上で移動します。移動先は`DummyDevice`です。TABを使うことができますので、たとえば cd D だけ入力してTABを押すと残りは自動で補完されます。
+- 以下のコマンドを入力し、ディレクトリをシェル上で移動します。
 
 ```
-cd DummyDevice/
+cd ~/environment/DummyDevice/
 ```
  
 - 以下のコマンドを入力します。{ご自分の作ったモノ名}{AWS IoTのendpoint_url}は置き換えてください。
