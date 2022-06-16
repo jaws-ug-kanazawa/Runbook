@@ -127,6 +127,29 @@ connect to AWS IoT >>>
 topic: data/20220619things
 send back state payload:{"state": {"reported": {"wait_time": 5}}}
 ```
+:::message alert
+以下の表示になってしまった場合には、モノを作り直ししてみてください。
+```
+connect to AWS IoT >>>
+Connect timed out
+class shadow Error
+Error main()
+Traceback (most recent call last):
+  File "deviceMain.py", line 48, in device_main
+    iot_client.create_shadow()
+  File "/home/ubuntu/environment/DummyDevice/iotCommon.py", line 136, in create_shadow
+    raise e
+  File "/home/ubuntu/environment/DummyDevice/iotCommon.py", line 122, in create_shadow
+    self._shadow_client.connect(self.KEEPALIVE)
+  File "/usr/local/lib/python3.6/dist-packages/AWSIoTPythonSDK/MQTTLib.py", line 1278, in connect
+    return self._AWSIoTMQTTClient.connect(keepAliveIntervalSecond)
+  File "/usr/local/lib/python3.6/dist-packages/AWSIoTPythonSDK/MQTTLib.py", line 520, in connect
+    return self._mqtt_core.connect(keepAliveIntervalSecond)
+  File "/usr/local/lib/python3.6/dist-packages/AWSIoTPythonSDK/core/protocol/mqtt_core.py", line 199, in connect
+    raise connectTimeoutException()
+AWSIoTPythonSDK.exception.AWSIoTExceptions.connectTimeoutException
+```
+:::
 
 AWS IoT の管理画面で `テスト`→`MQTT テストクライアント` を選びます。
 
@@ -229,7 +252,7 @@ select name from 'data/{モノの名前}' where name = 's3'
 保存したファイルをCloud9上の`DummyDevice` フォルダにアップロードします。
  
 シェルで ctr + cを押して、先ほどの通信を止めます。
-以下のコマンドを入力します。
+以下のコマンドを入力します。{証明書ファイル名}は、拡張子がcrtのファイルになります。
 ```
 curl -D - --tlsv1.2 -X POST --cert ./certs/{証明書ファイル名} --key ./certs/private.pem --cacert ./certs/root.pem https://{エンドポイント}:8443/topics/data/{モノの名前}?qos=0 -d @payload.json
 ```
