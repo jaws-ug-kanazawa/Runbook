@@ -1,0 +1,23 @@
+# 4 VPCの作成
+
+## 作業ディレクトリへの移動
+
+cd ~/environment/cfn
+
+## CloudFormationの実行コマンド
+
+### validate(検証)
+
+aws cloudformation validate-template --template-body file://01_vpc.yml
+
+### create
+
+aws cloudformation create-stack --stack-name handson-cfn --template-body file://01_vpc.yml
+
+
+### update
+
+aws cloudformation update-stack --stack-name handson-cfn --template-body file://01_vpc.yml
+
+
+
