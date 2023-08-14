@@ -1,0 +1,22 @@
+# 5 EC2の作成 その1
+
+## 作業ディレクトリへの移動
+
+cd ~/environment/cfn
+
+
+## CloudFormationの実行コマンド
+
+### validate
+
+aws cloudformation validate-template --template-body file://02_ec2.yml
+
+### create
+
+aws cloudformation create-stack --stack-name handson-cfn-ec2 --template-body file://02_ec2.yml
+
+### update
+
+aws cloudformation update-stack --stack-name handson-cfn-ec2 --template-body file://02_ec2.yml
+
+

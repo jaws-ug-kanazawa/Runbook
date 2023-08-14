@@ -1,0 +1,141 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Raisetech-lecture10-vpc
+
+Resources:
+#------------------------------------------------------
+#  VPC
+#------------------------------------------------------
+  MultiAZSample12:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 12.0.0.0/16
+      InstanceTenancy: default
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+      Tags:
+        - Key: Name
+          Value: "MultiAZSample12VPC"
+
+  PublicSubnetA:
+    Type: AWS::EC2::Subnet
+    Properties:
+      CidrBlock: 12.0.0.0/24
+      VpcId: !Ref MultiAZSample12
+      AvailabilityZone: !Select [ 0, !GetAZs ]
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: "MultiAZSample0A"
+
+  PublicSubnetC:
+    Type: AWS::EC2::Subnet
+    Properties:
+      CidrBlock: 12.0.1.0/24
+      VpcId: !Ref MultiAZSample12
+      AvailabilityZone: !Select [ 1, !GetAZs ]
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: "MultiAZSample1A"
+
+  PrivateSubnetA:
+    Type: AWS::EC2::Subnet
+    Properties:
+      CidrBlock: 12.0.2.0/24
+      VpcId: !Ref MultiAZSample12
+      AvailabilityZone: !Select [ 0, !GetAZs ]
+      Tags:
+        - Key: Name
+          Value: "MultiAZSample0C"
+
+  PrivateSubnetC:
+    Type: AWS::EC2::Subnet
+    Properties:
+      CidrBlock: 12.0.3.0/24
+      VpcId: !Ref MultiAZSample12
+      AvailabilityZone: !Select [ 1, !GetAZs ]
+      Tags:
+        - Key: Name
+          Value: "MultiAZSample1C"
+#------------------------------------------------------
+#  インターネットゲートウェイ
+#------------------------------------------------------
+  InternetGateway:
+    Type: AWS::EC2::InternetGateway
+    Properties: 
+      Tags:
+        - Key: Name
+          Value: MultiAZSample12
+
+  AttachGateway:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties: 
+      InternetGatewayId: !Ref InternetGateway
+      VpcId: !Ref MultiAZSample12
+#------------------------------------------------------
+#  ルートテーブルをパブリックサブネットにアタッチ
+#------------------------------------------------------
+  RouteTableForPublicSubnetC:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref MultiAZSample12
+  RouteForPublicSubnetC:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId: !Ref RouteTableForPublicSubnetC
+      DestinationCidrBlock:  0.0.0.0/0
+      GatewayId: !Ref InternetGateway
+  AssocciateRouteTableForPublicSubnetC:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnetC
+      RouteTableId: !Ref RouteTableForPublicSubnetC
+
+  RouteTableForPublicSubnetA:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref MultiAZSample12
+  RouteForPublicSubnetA:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId: !Ref RouteTableForPublicSubnetA
+      DestinationCidrBlock:  0.0.0.0/0
+      GatewayId: !Ref InternetGateway
+  AssocciateRouteTableForPublicSubnetA:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnetA
+      RouteTableId: !Ref RouteTableForPublicSubnetA
+#------------------------------------------------------
+#  Outputsセクション
+#------------------------------------------------------
+Outputs:
+  MultiAZSample12:
+    Description: MultiAZSample12
+    Value: !Ref MultiAZSample12
+    Export:
+      Name: !Sub ${AWS::StackName}-MultiAZSample12
+
+  PublicSubnetA:
+    Description: PublicSubnetA
+    Value: !Ref PublicSubnetA
+    Export:
+      Name: !Sub ${AWS::StackName}-PublicSubnetA
+
+  PublicSubnetC:
+    Description: PublicSubnetC
+    Value: !Ref PublicSubnetC
+    Export:
+      Name: !Sub ${AWS::StackName}-PublicSubnetC
+
+  PrivateSubnetA:
+    Description: PrivateSubnetA
+    Value: !Ref PrivateSubnetA
+    Export:
+      Name: !Sub ${AWS::StackName}-PrivateSubnetA
+
+  PrivateSubnetC:
+    Description: PrivateSubnetC
+    Value: !Ref PrivateSubnetC
+    Export:
+      Name: !Sub ${AWS::StackName}-PrivateSubnetC

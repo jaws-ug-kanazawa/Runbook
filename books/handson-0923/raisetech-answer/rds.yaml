@@ -1,0 +1,73 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Raisetech-lecture10-rds
+
+Parameters:
+#------------------------------------------------------
+#  DBMasterUsername、DBMasteruserpassword
+#------------------------------------------------------
+  VPCStack:
+    Type: String
+    Default: MultiAZSample12VPC
+  DBUser:
+    Type: String
+    Default: admin
+  DBPassword:
+    Type: String
+    Default: XXXX
+    NoEcho: true
+
+Resources:
+#------------------------------------------------------
+#  DBInstance
+#------------------------------------------------------
+  DBInstance1:
+    Type: AWS::RDS::DBInstance
+    DeletionPolicy: Delete
+    Properties:
+      VPCSecurityGroups:
+      -  !Ref DBSecurityGroup
+      DBInstanceClass: db.t3.micro
+      AllocatedStorage: "10"
+      StorageType: gp2
+      Engine: MySQL
+      MultiAZ: 'false'
+      AvailabilityZone: !Sub ${AWS::Region}a
+      MasterUsername: !Ref DBUser
+      MasterUserPassword: !Ref DBPassword
+      DBName: wordpress
+      BackupRetentionPeriod: 0
+      DBSubnetGroupName: !Ref DBSubnetGroup
+      
+#------------------------------------------------------
+#  DBSubnetGroup
+#------------------------------------------------------
+  DBSubnetGroup: 
+    Type: AWS::RDS::DBSubnetGroup
+    Properties:
+      DBSubnetGroupName: DBSubnetGroup1
+      DBSubnetGroupDescription: DB Subnet Group for Private Subnet
+      SubnetIds: 
+        - Fn::ImportValue: !Sub ${VPCStack}-PrivateSubnetA
+        - Fn::ImportValue: !Sub ${VPCStack}-PrivateSubnetC
+#------------------------------------------------------
+#  セキュリティーグループ(DBInstance)
+#------------------------------------------------------
+  DBSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties: 
+      GroupDescription: !Sub ${AWS::StackName}-MultiAZSample12
+      VpcId:
+        Fn::ImportValue: !Sub ${VPCStack}-MultiAZSample12
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 3306
+          ToPort: 3306
+          CidrIp: 0.0.0.0/0
+#------------------------------------------------------
+#  Outputsセクション
+#------------------------------------------------------
+Outputs:
+  DBEndpoint:
+    Value: !GetAtt DBInstance1.Endpoint.Address
+    Export:
+      Name: !Sub ${AWS::StackName}-DBEndpoint

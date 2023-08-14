@@ -1,0 +1,54 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: The CloudFormation template that creates a public open S3 bucket.
+
+# ------------------------------------------------------------#
+# Input Parameters
+# ------------------------------------------------------------#
+Parameters:
+  BucketName:
+    Type: String
+    Description: S3 Bucket name.
+    Default: koseizakio-public-bucket
+    MaxLength: 50
+    MinLength: 3
+
+Resources:
+# ------------------------------------------------------------#
+# S3
+# ------------------------------------------------------------#
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref BucketName
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: false
+        BlockPublicPolicy: false
+        IgnorePublicAcls: false
+        RestrictPublicBuckets: false
+      Tags:
+        - Key: Cost
+          Value: !Ref BucketName
+  S3BucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref S3Bucket
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Action:
+              - "s3:GetObject"
+            Effect: Allow
+            Resource: !Sub "arn:aws:s3:::${S3Bucket}/*"
+            Principal: "*"
+    DependsOn:
+      - S3Bucket
+
+# ------------------------------------------------------------#
+# Output Parameters
+# ------------------------------------------------------------#
+Outputs:
+#S3
+  S3BucketName:
+    Value: !Ref S3Bucket
+  TopPageURL:
+    Value: !Sub https://s3.${AWS::Region}.amazonaws.com/${S3Bucket}/index.html
