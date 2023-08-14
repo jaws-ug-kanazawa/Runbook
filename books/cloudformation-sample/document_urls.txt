@@ -1,0 +1,64 @@
+
+# AWS Hands-on for Beginners 〜 スケーラブルウェブサイト構築編 〜 
+
+https://pages.awscloud.com/event_JAPAN_Hands-on-for-Beginners-Scalable_LP.html
+
+
+# AWS Well Architected フレームワーク
+
+https://aws.amazon.com/jp/architecture/well-architected/
+https://wa.aws.amazon.com/wat.pillar.operationalExcellence.ja.html
+
+# AWS Black Belt Online Seminar AWS CloudFormation
+
+https://www.slideshare.net/AmazonWebServicesJapan/aws-black-belt-online-seminar-aws-cloudformation
+https://aws.amazon.com/jp/aws-jp-introduction/
+
+
+#  公式ドキュメント等
+
+テンプレートリファレンス
+https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/template-reference.html
+
+リソースタイプ
+https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
+
+リリース履歴 
+https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/ReleaseHistory.html
+
+サンプルテンプレート
+https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/cfn-sample-templates.html
+https://github.com/awslabs/aws-cloudformation-templates
+
+スタックの削除に失敗したとき
+https://aws.amazon.com/jp/premiumsupport/knowledge-center/cloudformation-stack-delete-failed/
+
+CodePipeline を使用した継続的デリバリー
+https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/continuous-delivery-codepipeline.html
+
+
+# 今後のラーニングパス
+
+ベストプラクティス
+https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/best-practices.html
+
+CodePipeline を使用した継続的デリバリー
+https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/continuous-delivery-codepipeline.html
+
+AWS Hands-on for Beginnersの他シリーズ
+https://aws.amazon.com/jp/aws-jp-introduction/aws-jp-webinar-hands-on/
+
+
+# その他
+
+AWS Command Line Tool (AWS CLI)
+http://aws.amazon.com/cli/
+
+各種SDK
+https://aws.amazon.com/jp/getting-started/tools-sdks/
+
+AWS CLIのコマンド補完
+https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/cli-configure-completion.html
+
+
+
